@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "NSU Course Seat Checker",
+  "version": "1.1.0",
+  "description": "Auto checks NSU course seat availability with configurable refresh interval",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "notifications",
+    "storage",
+    "offscreen",
+    "tts"
+  ],
+  "host_permissions": [
+    "https://rds3.northsouth.edu/*",
+    "https://rds4.northsouth.ac.bd/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rds3.northsouth.edu/*",
+        "https://rds4.northsouth.ac.bd/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
+  
