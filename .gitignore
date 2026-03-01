@@ -1,0 +1,11 @@
+.DS_Store
+
+# Keep the real checker logic private
+content.js
+content.private.js
+
+# Common local-only files
+*.log
+*.pem
+*.key
+node_modules/

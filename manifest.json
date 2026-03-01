@@ -27,7 +27,7 @@
         "https://rds3.northsouth.edu/*",
         "https://rds4.northsouth.ac.bd/*"
       ],
-      "js": ["content.js"]
+      "js": ["content.example.js"]
     }
   ]
 }

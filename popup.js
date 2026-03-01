@@ -59,7 +59,7 @@ function withActiveTab(cb) {
 }
 
 function ensureContentScript(tabId, cb) {
-  chrome.scripting.executeScript({ target: { tabId }, files: ['content.js'] }, () => {
+  chrome.scripting.executeScript({ target: { tabId }, files: ['content.example.js'] }, () => {
     // Even if this fails, it may already be injected via manifest; we still try messaging.
     cb();
   });
